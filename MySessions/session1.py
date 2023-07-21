@@ -16,3 +16,11 @@ print(b)
 print(type(b))
 print(type(edad))
 print("+ Tipos de datos")
+x = "Hola"
+print(type(x))
+x = ["Hola", "eo"]
+print(type(x))
+x = 32
+print(type(x))
+x = 32.1
+print(type(x))
