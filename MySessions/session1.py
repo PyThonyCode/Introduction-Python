@@ -31,3 +31,19 @@ for i in cadena:
     print(i)
 
 print(len(cadena))
+
+print("+ Booleanos")
+print(10 == 9)
+print(10 > 3)
+print("+ Operadores")
+a = 10
+b = 6
+suma = a + b
+resta = a - b
+mult = a * b
+div = a/b
+mod = a % b
+a -= 3
+b -= 2
+exp = b ** a
+flord = a//b
