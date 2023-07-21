@@ -47,3 +47,15 @@ a -= 3
 b -= 2
 exp = b ** a
 flord = a//b
+print(suma)
+print(resta)
+print(mult)
+print(div)
+print(mod)
+print(f"a:{a}, b:{b}")
+print(exp)
+print(flord)
+
+palabra = "hola mundo"
+print("hola" in palabra)
+print("hola mundo" is palabra)
