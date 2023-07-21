@@ -2,7 +2,6 @@ print("""
 ------ SESSION 1: --------
 ---- + Variables ---------
 ---- + Tipo de Datos -----
----- + Números -----------
 ---- + Cadenas -----------
 ---- + Booleanos ---------
 ---- + Operadores --------""")
@@ -24,3 +23,11 @@ x = 32
 print(type(x))
 x = 32.1
 print(type(x))
+
+print("+ Cadenas")
+cadena = "Hola mundo"
+print(cadena[1])
+for i in cadena:
+    print(i)
+
+print(len(cadena))
