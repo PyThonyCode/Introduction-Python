@@ -22,9 +22,12 @@ edad = calcular_edad(year_nacimiento)
 def contar_vocales(frase):
     count = 0
     for n in frase:
+        print(n)
+        if n == "u":
+            count += 1
         if n == "a":
             count += 1
-    return count
+    print(f"Conteo: {count}")
 
 
 def Imprimir():
@@ -36,7 +39,8 @@ def Imprimir():
     print(f"Conteo de palabra: {len(frase_habitual)}")
     print(
         f"Presupuesto: S/. {presupuesto} al día cuando puede agarrar de su padre xd")
-    print(f"Conteo de vocal: {contar_vocales(frase_habitual)}")
+
+    contar_vocales(frase_habitual)
 
 
 Imprimir()
