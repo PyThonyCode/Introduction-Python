@@ -40,4 +40,20 @@ mylist.remove('pelotas')
 print(
     f"5. list.remove(dato)= Sacar dato de mi lista : {mylist}")
 
+print("------ USO DE FOR -------")
+
+for n in mylist:
+    print(n)
+
 print("---------------------- Tuplas --------------------------")
+
+mytuple = ("orange", 2, "orange")
+
+print("----- FUNCIONES ------")
+print(f"1. len(mi lista)= tamaño de mi lista : {len(mytuple)}")
+a = "rice"
+print(f"1. dato.add(mi tupla)= Agregar dato : {mytuple}")
+
+print("------ METODOS -------")
+print(
+    f"1. mitupla.count(dato)= Contar datos repetidos : {mytuple.count('orange')}")
