@@ -42,33 +42,34 @@ print("""
 * 5-Lomo saltado -  18 soles  *
 * 6-salir del sistema         *
 *******************************""")
+
 op = input("Ingrese el numero del plato, por favor ")
+while op > "0" and op < "6":
+    if op == "1":
+        precio = 13
+        plato = "Arroz chaufa"
+    elif op == "2":
+        precio = 10
+        plato = "arroz con pollo"
+    elif op == "3":
+        precio = 15
+        plato = "chicharron"
+    elif op == "4":
+        precio = 20
+        plato = "cabrito"
+    elif op == "5":
+        precio = 18
+        plato = "Lomo saltado"
+    else:
+        print("Muchas gracias ", nombre, "espero haber sido de ayuda")
+        break
 
-if op == "1":
-    precio = 13
-    plato = "Arroz chaufa"
-elif op == "2":
-    precio = 10
-    plato = "arroz con pollo"
-elif op == "3":
-    precio = 15
-    plato = "chicharron"
-elif op == "4":
-    precio = 20
-    plato = "cabrito"
-elif op == "5":
-    precio = 18
-    plato = "Lomo saltado"
-elif op == "6":
-    print("Muchas gracias ", nombre, "espero haber sido de ayuda")
+    cant = int(input("Ingresar la cantidad de platos"))
 
-else:
-    print("Opcion Incorrecta")
+    print("*******BOLETA DE VENTA ********")
+    print("Descripcion del plato:  ", plato)
+    print("Costo del plato:  ", precio)
+    print("Cantidad: ", cant)
+    print("Total: ", precio*cant)
 
-cant = int(input("Ingresar la cantidad de platos"))
-
-print("*******BOLETA DE VENTA ********")
-print("Descripcion del plato:  ", plato)
-print("Costo del plato:  ", precio)
-print("Cantidad: ", cant)
-print("Total: ", precio*cant)
+    op = input("Ingrese el numero del plato, por favor ")
