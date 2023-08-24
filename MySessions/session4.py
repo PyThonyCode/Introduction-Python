@@ -78,13 +78,87 @@ ciclos """
 8. Crear una variable contraseña en el cual almacene lo siguiente “SENATI”, luego preguntar al
 usuario por la contraseña hasta que introduzca la contraseña correcta"""
 
-password = "SENATI"
+# password = "SENATI"
 
-while True:
-    pass_ingresado = input("Ingresar la contraseña: ")
+# while True:
+#    pass_ingresado = input("Ingresar la contraseña: ")
 
-    if pass_ingresado == password:
-        print("Ingresaste a tu cuenta")
-        break
+#    if pass_ingresado == password:
+#        print("Ingresaste a tu cuenta")
+#        break
+#    else:
+#         print("No es correcto la contraseña")
+
+
+"""Nivel Intermedio
+1. Para los valores enteros del 1 al 20, imprimir por pantalla si es par o impar"""
+
+# for x in range(1, 20):
+#    if x % 2 == 0:
+#        print(f"{x} es par")
+#    else:
+#        print(f"{x} es impar")
+
+"""
+2. Modificar el ejercicio 1 para poder ingresar el último número y luego imprimir por pantalla si
+es par o impar
+3. En un ciclo for mostrar los valores entre 0 y 5 el resultado de elevarlo a la potencia igual a 3"""
+# print("Número\tPotencia")
+# for x in range(1, 6):
+#    print(f"{x}\t{x**3}")
+
+"""
+4. Imprimir la tabla de multiplicar del 1 al 10"""
+
+# print("""
+# ******************************
+# **** TABLA DE MULTIPLICAR ****
+# ******************************""")
+
+# for x in range(1, 11):
+#    for y in range(0, 13):
+#        print(f"{x}*{y} = {x*y}")
+
+"""
+5. Utilizar un ciclo while para realizar la factorial de un número guardado en una variable, sólo si
+la variable es mayor a 0"""
+
+# num = 5
+# factorial = 1
+# while num > 0:
+#    factorial *= num
+#    num -= 1
+# print(factorial)
+
+"""
+6. Crear una lista1 con n elementos y luego ingresar los números enteros del 10 al 50, luego crear
+otra lista2 para invertir los elementos de la lista1
+7. Imprimir los números primos existentes entre 1 y n, recuerda que n es el último número.
+8. ¿Se puede mejorar el proceso del ejercicio7? Utilizar las sentencias break
+9. Aplicando continue, armar un ciclo while que solo imprima los valores divisibles por 12, dentro
+del rango de números de 100 a 300
+10. Crear un ciclo while que encuentre"""
+
+print("""
+++++++++++    CALCULADORA   +++++++++
+++++++++++ DE 4 OPERACIONES +++++++++
++ 1 - SUMA                          +
++ 2 - RESTA                         +
++ 3 - MULTPLICACION                 +
++ 4 - DIVISION                      +""")
+
+op = input("Ingresar el número de operación: ")
+
+if op == "4":
+    print("""
+    ++++ DIVISION DE 2 NUMEROS +++++""")
+    num1 = int(input("Ingresar primer número: "))
+    num2 = int(input("Ingresar primer número: "))
+
+    if num1 != 0 and num2 != 0:
+        print(f"La division es {num1/num2}")
     else:
-        print("No es correcto la contraseña")
+        print("Los números no deben ser 0")
+        pass
+else:
+    print("salida")
