@@ -68,7 +68,23 @@ ciclos """
 """
 7. Mostrar todas las palabras que introduzca el usuario hasta que el usuario escriba “salir” """
 
+# palabra = input("Ingresar una palabra: ")
+
+# while palabra != "salir":
+#    print(palabra)
+#    palabra = input("Ingresar una palabra: ")
 
 """
 8. Crear una variable contraseña en el cual almacene lo siguiente “SENATI”, luego preguntar al
 usuario por la contraseña hasta que introduzca la contraseña correcta"""
+
+password = "SENATI"
+
+while True:
+    pass_ingresado = input("Ingresar la contraseña: ")
+
+    if pass_ingresado == password:
+        print("Ingresaste a tu cuenta")
+        break
+    else:
+        print("No es correcto la contraseña")
